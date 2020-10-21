@@ -3,6 +3,7 @@
  ***************************************************************/ 
 
 
+ 
 /****************************
  * REFERENZA ELEMENTI DEL DOM
 *****************************/
@@ -50,9 +51,25 @@ bottoneGenera.addEventListener('click', function() {
     document.getElementById('codice-cp').innerHTML = numCp;
     document.getElementById('costo').innerHTML = costoBiglietto;
 
-
-
-
+    // ANNULAMENTO HIDDEN TICKET
+    container.className = 'show';
 });
+
+// RESET TICKET 
+bottoneAnnulla.addEventListener('click', function() {
+    container.className = 'hidden';
+
+    // INPUT
+    document.getElementById('nome').value = '';
+    document.getElementById('km').value = '';
+    document.getElementById('fascia-eta').value = '';
+
+    // RESET VALORI BIGLIETTO
+    document.getElementById('nome-passeggiero').innerHTML = '';
+    document.getElementById('offerta-eta').innerHTML = '';
+    document.getElementById('carrozza').innerHTML = '';
+    document.getElementById('codice-cp').innerHTML = '';
+    document.getElementById('costo').innerHTML = '';
+})
 
 
