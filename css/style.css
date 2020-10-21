@@ -1,0 +1,25 @@
+/* GENERAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.big-container {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+/* DATI UTENTE */
+.dati-utente {
+   margin-bottom: 50px;
+}
+
+
+
+/* IL TUO BIGLIETTO */
