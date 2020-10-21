@@ -22,8 +22,8 @@ bottoneGenera.addEventListener('click', function() {
     var fasciaEta = document.getElementById('fascia-eta').value;
 
     // PREZZI BIGLIETTI
-    var prezzoTicket = 0.21;
-    var costoBiglietto = prezzoTicket * kmDaPercorrere;
+    var prezzoKm = 0.21;
+    var costoBiglietto = prezzoKm * kmDaPercorrere;
     var offerta = 'Biglietto Standard';
 
     // SCONTO TICKET 
@@ -42,10 +42,10 @@ bottoneGenera.addEventListener('click', function() {
     costoBiglietto = costoBiglietto.toFixed(2) + '€';
 
     var numCarrozza = Math.floor( Math.random() * 10 ) + 1;
-    var numCp = Math.floor( Math.random() *  (10000 - 90000) ) + 9000; 
+    var numCp = Math.floor( Math.random() *  (10000 - 9000) ) + 9000; 
 
     document.getElementById('nome-passeggiero').innerHTML = nome;
-    document.getElementById('offerta-applicata').innerHTML = offerta;
+    document.getElementById('offerta-eta').innerHTML = offerta;
     document.getElementById('carrozza').innerHTML = numCarrozza;
     document.getElementById('codice-cp').innerHTML = numCp;
     document.getElementById('costo').innerHTML = costoBiglietto;
