@@ -7,6 +7,17 @@
 
 body {
     font-family: sans-serif;
+    background-image: url('https://cdn1.matadornetwork.com/blogs/1/2019/04/Zermatt-Switzerland-1200x853.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #d53800;
+    padding-top: 20px;
+    text-transform: uppercase;
 }
 
 .big-container {
@@ -17,9 +28,32 @@ body {
 
 /* DATI UTENTE */
 .dati-utente {
-   margin-bottom: 50px;
+    display: flex;
+    flex-basis: calc(100% / 3);
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.row {
+    display: flex;
+    line-height: 60px;
+}
+
+.row label {
+    padding: 10px;
 }
 
 
 
 /* IL TUO BIGLIETTO */
+.container-tab {
+    height: 150px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+td {
+    width: 23%;
+}
+
